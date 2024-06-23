@@ -29,21 +29,21 @@
             </div>
         </nav>
 
-        <center>
         <main class="feed">
             <div class="stories">
-                <!-- Adicione suas histórias aqui -->
+                <!-- Histórias -->
                 <div class="story">
-                    <img src="https://scalebranding.com/wp-content/uploads/2021/04/story.jpg" alt="Story">
+                    <img src="https://scalebranding.com/wp-content/uploads/2021/04/story.jpg" alt="Story" data-user="nunez.ofc" data-src="https://scalebranding.com/wp-content/uploads/2021/04/story.jpg">
                 </div>
                 <div class="story">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg" alt="Story">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg" alt="Story" data-user="messi" data-src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg">
                 </div>
                 <div class="story">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Neymar_Jr._with_Al_Hilal%2C_3_October_2023_-_03_%28cropped%29.jpg" alt="Story">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Neymar_Jr._with_Al_Hilal%2C_3_October_2023_-_03_%28cropped%29.jpg" alt="Story" data-user="neymarjr" data-src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Neymar_Jr._with_Al_Hilal%2C_3_October_2023_-_03_%28cropped%29.jpg">
                 </div>
-                <!-- Repita o bloco acima para cada story -->
+                <!-- Mais histórias aqui -->
             </div>
+
             <div class="post">
                 <div class="post-header">
                     <img src="https://scalebranding.com/wp-content/uploads/2021/04/story.jpg" alt="Profile" class="profile-photo">
@@ -55,12 +55,17 @@
                 </div>
                 <div class="post-footer">
                     <div class="post-actions">
-                        <span class="icon like-icon" id="like-icon-1"><i class="fas fa-heart"></i></span>
-                        <span class="icon"><i class="fas fa-comment"></i></span>
-                        <span class="icon"><i class="fas fa-paper-plane"></i></span>
-                        <span class="icon"><i class="fas fa-bookmark"></i></span>
+                        <div class="left-icons">
+                            <span class="icon like-icon" id="like-icon-1"><i class="fas fa-heart"></i></span>
+                            <span class="icon"><i class="fas fa-comment"></i></span>
+                            <span class="icon"><i class="fas fa-paper-plane"></i></span>
+                        </div>
+                       <!-- Seu HTML -->
+                        <div class="right-icons">
+                           <span class="icon save-icon" id="save-icon"><i class="far fa-bookmark"></i></span>
+                        </div>
                     </div>
-                    <span class="likes">512 curtidas</span>
+                    <div class="likes">512 curtidas</div>
                     <div class="caption">
                         <span class="username">nunez.ofc</span> A melhor casa..
                     </div>
@@ -84,8 +89,7 @@
                     </div>
                 </div>
             </div>
-        </center>
-            <!-- Repita o bloco acima para cada post -->
+            <!-- Mais postagens aqui -->
         </main>
 
         <aside class="suggestions">
@@ -125,9 +129,18 @@
                     <span class="follow">Seguir</span>
                 </div>
             </div>
-            <!-- Repita o bloco acima para cada sugestão -->
+            <!-- Mais sugestões aqui -->
         </aside>
     </div>
+
+    <!-- Modal de Histórias -->
+    <div id="story-modal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img id="story-img" src="" alt="Story Image">
+        </div>
+    </div>
+
     <script src="logado.js"></script>
 </body>
 </html>
