@@ -5,6 +5,7 @@
     <title>Instagram Clone</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="logado.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -13,23 +14,22 @@
                 <img src="Imagens/logo.png" alt="Instagram Logo">
             </div>
             <ul>
-                <li><a href="#"><span class="icon">&#8962;</span> Página inicial</a></li>
-                <li><a href="#"><span class="icon">&#128269;</span> Pesquisa</a></li>
-                <li><a href="#"><span class="icon">&#128270;</span> Explorar</a></li>
-                <li><a href="#"><span class="icon">&#128250;</span> Reels</a></li>
-                <li><a href="#"><span class="icon">&#128172;</span> Mensagens</a></li>
-                <li><a href="#"><span class="icon">&#128276;</span> Notificações</a></li>
-                <li><a href="#"><span class="icon">&#10010;</span> Criar</a></li>
-                <li><a href="#"><span class="icon">&#128100;</span> Perfil</a></li>
+                <li><a href="#"><span class="icon"><i class="fas fa-home"></i></span> Página inicial</a></li>
+                <li><a href="#"><span class="icon"><i class="fas fa-search"></i></span> Pesquisa</a></li>
+                <li><a href="#"><span class="icon"><i class="fas fa-compass"></i></span> Explorar</a></li>
+                <li><a href="#"><span class="icon"><i class="fas fa-video"></i></span> Reels</a></li>
+                <li><a href="#"><span class="icon"><i class="fas fa-envelope"></i></span> Mensagens</a></li>
+                <li><a href="#"><span class="icon"><i class="fas fa-bell"></i></span> Notificações</a></li>
+                <li><a href="#"><span class="icon"><i class="fas fa-plus-square"></i></span> Criar</a></li>
+                <li><a href="#"><span class="icon"><i class="fas fa-user"></i></span> Perfil</a></li>
             </ul>
-            <div class="threads">
-                <a href="#"><span class="icon">&#128247;</span> Threads</a>
-            </div>
-            <div class="more">
-                <a href="#"><span class="icon">&#8942;</span> Mais</a>
+            <div class="threadsandmore">
+                <a href="#"><span class="icon"><img src="Imagens/threads-app-icon.png" alt="Threads"></span> Threads</a>
+                <a href="#"><span class="icon"><i class="fas fa-bars"></i></span> Mais</a>
             </div>
         </nav>
 
+        <center>
         <main class="feed">
             <div class="stories">
                 <!-- Adicione suas histórias aqui -->
@@ -39,12 +39,9 @@
                 <div class="story">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg" alt="Story">
                 </div>
-
                 <div class="story">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Neymar_Jr._with_Al_Hilal%2C_3_October_2023_-_03_%28cropped%29.jpg" alt="Story">
                 </div>
-
-                
                 <!-- Repita o bloco acima para cada story -->
             </div>
             <div class="post">
@@ -54,18 +51,18 @@
                     <span class="time">5 h</span>
                 </div>
                 <div class="post-image">
-                    <img src="https://www.quintoandar.com.br/guias/wp-content/uploads/2023/06/casa-de-luxo-7-1.jpg" alt="Post Image">
+                    <img src="https://wallpaper.forfun.com/fetch/52/5218d5895190f5fea778145f707cf699.jpeg" alt="Post Image">
                 </div>
                 <div class="post-footer">
                     <div class="post-actions">
-                        <span class="icon icon-like">&#9829;</span>
-                        <span class="icon">&#128172;</span>
-                        <span class="icon">&#9993;</span>
-                        <span class="icon">&#128190;</span>
+                        <span class="icon like-icon" id="like-icon-1"><i class="fas fa-heart"></i></span>
+                        <span class="icon"><i class="fas fa-comment"></i></span>
+                        <span class="icon"><i class="fas fa-paper-plane"></i></span>
+                        <span class="icon"><i class="fas fa-bookmark"></i></span>
                     </div>
                     <span class="likes">512 curtidas</span>
                     <div class="caption">
-                        <span class="username">nunez.ofc</span> Encontre roupas elegantes na Nunez...
+                        <span class="username">nunez.ofc</span> A melhor casa..
                     </div>
                     <span class="comments">Ver todos os 3 comentários</span>
                     <div class="comment-section">
@@ -87,6 +84,7 @@
                     </div>
                 </div>
             </div>
+        </center>
             <!-- Repita o bloco acima para cada post -->
         </main>
 
@@ -95,6 +93,7 @@
                 <img src="Imagens/kaique.jpeg" alt="Profile" class="profile-photo">
                 <div>
                     <span class="username">kaique.devs</span>
+                    <br>
                     <span class="name">KAIQUE DA SILVA MENDES</span>
                     <a href="#">Mudar</a>
                 </div>

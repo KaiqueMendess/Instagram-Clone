@@ -28,3 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var likeIcons = document.querySelectorAll('.like-icon');
+
+    likeIcons.forEach(function(icon) {
+        icon.addEventListener('click', function() {
+            this.classList.toggle('liked');
+        });
+    });
+});
