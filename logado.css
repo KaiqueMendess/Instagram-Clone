@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #000;
+    border-right: 1px solid #333;
+    height: 180vh;
+    position: fixed;
+}
+
+.sidebar .logo img {
+    width: 100%;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a .icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.sidebar .threads, .sidebar .more {
+    margin-top: 20px;
+}
+
+.sidebar .threads a, .sidebar .more a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+
+.feed {
+    flex: 1;
+    margin-left: 270px;
+    padding: 20px;
+}
+
+.stories {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.story {
+    margin-right: 10px;
+}
+
+.story img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.post {
+    background-color: #1c1c1c;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.post-header, .post-footer {
+    padding: 10px 20px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+}
+
+.post-header .profile-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-header .username {
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.post-header .time {
+    color: #888;
+}
+
+.post-image img {
+    width: 100%;
+    display: block;
+}
+
+.post-footer .post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.post-footer .post-actions .icon {
+    font-size: 20px;
+}
+
+.post-footer .likes {
+    font-weight: bold;
+}
+
+.post-footer .caption {
+    margin-top: 10px;
+}
+
+.post-footer .caption .username {
+    font-weight: bold;
+}
+
+.post-footer .comments {
+    color: #888;
+    margin-top: 10px;
+}
+
+.post-footer .add-comment input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.suggestions {
+    width: 300px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #000;
+    border-left: 1px solid #333;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+}
+
+.suggestions .user-info, .suggestions .suggestion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.suggestions .user-info .profile-photo, .suggestions .suggestion .profile-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.suggestions .user-info .username {
+    font-weight: bold;
+}
+
+.suggestions .user-info .name {
+    color: #888;
+}
+
+.suggestions .suggestions-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.suggestions .suggestion .follow {
+    color: #0095f6;
+    cursor: pointer;
+}
+
+.comment-section {
+    display: none;
+    margin-top: 10px;
+}
+
+.comment-section.visible {
+    display: block;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.comment .profile-photo {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment .comment-text {
+    background-color: #020202;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
